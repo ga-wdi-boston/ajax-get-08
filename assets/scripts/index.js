@@ -13,12 +13,8 @@ const getBooksHandler = function(event){
 const getInputBookHandler = function(event){
   event.preventDefault();
   libraryApi.getInputBook($('#input-book-name').val())
-  .done(
-    ui.onSuccessInputBook
-  )
-  .fail(
-    ui.onFailure
-  );
+  .done(ui.onSuccessInputBook)
+  .fail(ui.onFailure);
 };
 
 // On document ready
