@@ -1,3 +1,9 @@
 'use strict';
 
-module.exports = true;
+const onSuccess = function(data){
+  console.table(data.books);
+};
+
+module.exports = {
+  onSuccess,
+};
