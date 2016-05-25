@@ -22,5 +22,3 @@ $(() => {
   $('#get-books').on('click', getBooksHandler);
   $('#get-input-book').on('click', getInputBookHandler);
 });
-
-// $(document).ready( function(){} ); is the same as $( () => {} );
