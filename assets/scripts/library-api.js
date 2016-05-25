@@ -7,6 +7,14 @@ const getBooks = function(){
   });
 };
 
+const getInputBook = function(bookIndex){
+  return $.ajax({
+    url: 'http://localhost:3000/books/' + bookIndex,
+    method: 'GET',
+  });
+};
+
 module.exports = {
   getBooks,
+  getInputBook,
 };
