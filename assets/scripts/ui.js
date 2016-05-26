@@ -23,8 +23,13 @@ const bookTitle = function(book) {
 };
   const onSuccessTitle = function(data) {
   $('span').remove();
+  if(data.books.find(bookTitle)) {
   $('#insert').append('<span>' + data.books.find(bookTitle)["title"] + " is written by " +
 data.books.find(bookTitle)["author"] + '</span>');
+}
+  else {
+    $('#insert').append('<span>There is no book by this title.</span>');
+  }
 $('#search-title').val('');
 }
 //Search by ID Number
