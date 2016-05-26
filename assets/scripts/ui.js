@@ -1,7 +1,7 @@
 'use strict';
 //Search by author
 const authorName = function(book) {
-  return book.author === $('#search').val();
+  return book.author.toUpperCase() === $('#search').val().toUpperCase();
 };
   const onSuccessAuthor = function(data) {
   $('span').remove();
@@ -19,7 +19,7 @@ const authorName = function(book) {
 }
 //Search by Title
 const bookTitle = function(book) {
-  return book.title === $('#search-title').val();
+  return book.title.toUpperCase() === $('#search-title').val().toUpperCase();
 };
   const onSuccessTitle = function(data) {
   $('span').remove();
