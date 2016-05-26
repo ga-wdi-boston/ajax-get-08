@@ -7,14 +7,28 @@
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
-      <h1>Example</h1>
+      <h1>Sarah's Book Database</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+      <p>Search my book database by Author Name, Title or Book ID:</p>
+      <form action="#">
+        <input id="search" type="field" placeholder="Search Author">
+        <input type="submit" id="search-book" value="SEARCH FOR AN AUTHOR">
+      </form>
+      <br />
+      <form action="#">
+        <input id="search-title" type="field" placeholder="Search Title">
+        <input type="submit" id="searchtitle" value="SEARCH FOR A TITLE">
+      </form>
+      <br />
+      <form action="#">
+        <input id="search-ID" type="field" placeholder="Search Title">
+        <input type="submit" id="searchID" value="SEARCH BY ID">
+      </form>
+      <br />
+      <form action="#">
+        <input type="submit" id="allBooks" value="VIEW ALL BOOKS">
+      </form>
+      <div id="insert" style="font-size: 18px; margin-top: 10px">
+      </div>
     </body>
 </html>
